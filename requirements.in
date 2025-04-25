@@ -1,0 +1,5 @@
+dbrepo==1.7.3
+xgboost
+scikit-learn
+jupyterlab
+matplotlib

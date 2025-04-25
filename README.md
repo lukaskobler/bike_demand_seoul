@@ -2,14 +2,16 @@ This repository contains a machine learning project focused on predicting hourly
 
 The project uses the public Seoul Bike Sharing Demand dataset, featuring variables such as temperature, humidity, wind speed, and visibility. The complete workflow includes data preprocessing, regression modeling (using XGBoost), performance evaluation, and both time-based and randomly sampled data splits to support model validation.
 
-Key Features:
+# Key Features:
 
-Structured dataset with clear metadata and regression/forecasting splits
-XGBoost models with basic hyperparameter tuning and evaluation (RMSE, MAE, MAPE, R²)
-Visualizations comparing actual vs. predicted demand, with support for resampling over time
-Transparent codebase designed with FAIR (Findable, Accessible, Interoperable, Reproducible) principles in mind
-Reproducible environment configuration using modern tooling
-Environment Setup:
+- Structured dataset with clear metadata and regression/forecasting splits
+- XGBoost models with basic hyperparameter tuning and evaluation (RMSE, MAE, MAPE, R²)
+- Visualizations comparing actual vs. predicted demand, with support for resampling over time
+- Transparent codebase designed with FAIR (Findable, Accessible, Interoperable, Reproducible) principles in mind
+- Reproducible environment configuration using modern tooling
+
+
+# Environment Setup:
 
 To initialize the environment, run:
 

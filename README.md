@@ -1,19 +1,23 @@
-This repository contains a machine learning project focused on predicting hourly bike rental demand in Seoul using historical weather and rental data. The goal is to build and evaluate regression models that support smarter fleet distribution, cost reduction, and planning in urban bike-sharing systems.
+Bike Demand Prediction using XGBoost
 
-The project uses the public Seoul Bike Sharing Demand dataset, featuring variables such as temperature, humidity, wind speed, and visibility. The complete workflow includes data preprocessing, regression modeling (using XGBoost), performance evaluation, and both time-based and randomly sampled data splits to support model validation.
+This repository contains a Jupyter notebook that demonstrates how to use the XGBoost algorithm to predict bike demand in Seoul. The notebook covers data preprocessing, model training, and evaluation.
 
-# Key Features:
+Setup Instructions
 
-- Structured dataset with clear metadata and regression/forecasting splits
-- XGBoost models with basic hyperparameter tuning and evaluation (RMSE, MAE, MAPE, R²)
-- Visualizations comparing actual vs. predicted demand, with support for resampling over time
-- Transparent codebase designed with FAIR (Findable, Accessible, Interoperable, Reproducible) principles in mind
-- Reproducible environment configuration using modern tooling
+1. Clone the Repository
+git clone https://github.com/lukaskobler/bike_demand_seoul.git
+cd bike_demand_seoul
+2. Create a Virtual Environment (Optional but Recommended)
+python3 -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+3. Install Dependencies
+pip install -r requirements.txt
+Alternatively, if you're using pip-compile, generate the requirements.txt first:
 
-
-# Environment Setup:
-
-To initialize the environment, run:
-
-./setup.sh
-This script creates a virtual environment and installs all dependencies listed in requirements.txt. The file was generated using pip-compile (from the pip-tools package), providing a reproducible and consistent dependency resolution process that goes beyond a basic pip install.
+pip install pip-tools
+pip-compile requirements.in
+pip install -r requirements.txt
+4. Start Jupyter Notebook
+jupyter notebook
+5. Open the Notebook
+In the Jupyter interface, open the xgboost_seoul_bike_demand.ipynb notebook and follow along with the steps.

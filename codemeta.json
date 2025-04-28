@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/codemeta/codemeta/master/codemeta.json",
+  "name": "Bike Rental Demand Prediction",
+  "description": "A machine learning model to predict bike rental demand based on environmental and temporal features.",
+  "version": "1.0.0",
+  "keywords": ["machine learning", "bike rental", "regression", "xgboost", "forecasting", "Seoul"],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Lukas Kobler",
+      "email": "e1427198@student.tuwien.ac.com",
+      "affiliation": "Your Institution"
+    }
+  ],
+
+  "repository": "https://github.com/lukaskobler/bike_demand_seoul",
+  "softwareVersion": "1.0.0",
+  "dependencies": [
+    {
+      "name": "xgboost",
+      "version": "3.0.0"
+    },
+    {
+      "name": "pandas",
+      "version": "2.2.3"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.10.1"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.6.1"
+    }
+  ],
+  "license": "Apache 2.0",
+  "identifier": "",
+  "programmingLanguage": "Python",
+  "runtime": "Python 3.11+",
+  "howToCite": "Please cite as: Your Name, Bike Rental Demand Prediction, Version 1.0.0, GitHub Repository: https://github.com/lukaskobler/bike_demand_seoul",
+  "sourceCode": "https://github.com/lukaskobler/bike_demand_seoul/blob/main/xgboost_seoul_bike_demand.ipynb",
+  "keywords": ["bike rental", "forecasting", "machine learning", "regression", "xgboost"]
+}

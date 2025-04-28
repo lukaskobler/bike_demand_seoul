@@ -13,7 +13,7 @@ aiosignal==1.3.2
 annotated-types==0.7.0
     # via pydantic
 anyio==4.9.0
-    # via
+    # viaf
     #   httpx
     #   jupyter-server
 appnope==0.1.4

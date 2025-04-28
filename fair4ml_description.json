@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "fair4ml": "https://w3id.org/fair4ml/",
+    "codemeta": "https://w3id.org/codemeta/"
+  },
+  "@graph": [
+    {
+      "@id": "fair4ml:MLModel",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Executable Machine Learning Model",
+      "rdfs:subClassOf": {
+        "@id": "schema:CreativeWork"
+      }
+    },
+    {
+      "@id": "https://github.com/lukaskobler/bike_demand_seoul",
+      "schema:name": "XGboost Seoul Bike Demand Regressor",
+      "schema:version": "1.0.0",
+      "schema:description": "This project leverages machine learning to predict the hourly demand for bike rentals in Seoul. It uses environmental and temporal data features such as temperature, humidity, wind speed, and seasons, trained using XGBoost regression. The model is made accessible for reuse and further research in urban mobility and smart city applications.",
+      "schema:url": "https://github.com/lukaskobler/bike_demand_seoul",
+      "schema:license": "Apache 2.0",
+      "schema:author": {
+        "@type": "Person",
+        "schema:name": "Lukas Kobler"
+      },
+      "schema:datePublished": "2025-04-28",
+      "fair4ml:evaluatedOn": {
+        "@id": "https://doi.org/10.82556/v8zn-p156"
+      },
+      "fair4ml:evaluationMetrics": [
+        {"schema:name": "RMSE", "schema:value": "342.9240531808756"},
+        {"schema:name": "MAE", "schema:value": "233.9310760498047"},
+        {"schema:name": "R²", "schema:value": "0.7112938165664673"}
+      ],
+      "fair4ml:intendedUse": ["Urban planning", "Smart planning in the city", "Smarter operations"],
+      "fair4ml:usageInstructions": "Use xgboost.load_model to load the binary file. model.save_model(filename)",
+      "fair4ml:modelCategory": "Regression",
+      "fair4ml:mlTask": "Demand forecasting"
+    }
+  ]
+}

@@ -21,3 +21,7 @@ pip install -r requirements.txt
 jupyter notebook
 5. Open the Notebook
 In the Jupyter interface, open the xgboost_seoul_bike_demand.ipynb notebook and follow along with the steps.
+
+
+TUWRD link:
+https://test.researchdata.tuwien.ac.at/records/wvqpp-nhb32
